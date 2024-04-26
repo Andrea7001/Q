@@ -1,0 +1,55 @@
+﻿@model Q.EntidadesNegocio.EN.PersonaQ
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PersonaQ</h4>
+    <hr />
+    <dl class="row">
+        
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombreq)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombreq)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apellidoq)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apellidoq)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechadeNacimientoq)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechadeNacimientoq)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sueldoq)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sueldoq)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Estatusq)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Estatusq)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Comentarioq)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Comentarioq)
+        </dd>
+    </dl>
+</div>
+<div> 
+    @Html.ActionLink("Edit", "Edit", new { ID = Model.ID }) |
+    <a asp-action="Index">Back to List</a>
+</div>
